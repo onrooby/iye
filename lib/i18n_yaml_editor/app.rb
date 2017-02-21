@@ -13,20 +13,14 @@ module I18nYamlEditor
       @path = File.expand_path(path)
       @store = Store.new
       I18nYamlEditor.app = self
-    end
-
-    attr_accessor :store
-
-    def start
       $stdout.puts " * Loading translations from #{@path}"
       load_translations
 
       $stdout.puts " * Creating missing translations"
       store.create_missing_keys
-
-      $stdout.puts " * Starting web editor at port 5050"
-      Rack::Server.start :app => Web, :Port => ENV['PORT'] || 5050, :config => './config.ru'
     end
+
+    attr_accessor :store
 
     def load_translations
       files = Dir[@path + "/**/*.yml"]
