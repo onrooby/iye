@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 require "test_helper"
-require "i18n_yaml_editor/translation"
+require "iye/translation"
 
 class TestTranslation < Minitest::Test
   def test_text

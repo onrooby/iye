@@ -1,8 +1,4 @@
-# encoding: utf-8
-
-require "set"
-
-module I18nYamlEditor
+module Iye
   class Key
     attr_accessor :name, :translations
 

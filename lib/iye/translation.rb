@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-module I18nYamlEditor
+module Iye
   class Translation
     attr_accessor :name, :file
     attr_writer :text

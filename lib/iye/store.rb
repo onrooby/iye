@@ -1,14 +1,4 @@
-# encoding: utf-8
-
-require "set"
-require "pathname"
-
-require "i18n_yaml_editor/transformation"
-require "i18n_yaml_editor/category"
-require "i18n_yaml_editor/key"
-require "i18n_yaml_editor/translation"
-
-module I18nYamlEditor
+module Iye
   class DuplicateTranslationError < StandardError; end
 
   class Store

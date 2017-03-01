@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 require "test_helper"
-require "i18n_yaml_editor/store"
+require "iye/store"
 
 class TestStore < Minitest::Test
   def setup

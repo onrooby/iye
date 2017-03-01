@@ -1,11 +1,4 @@
-# encoding: utf-8
-
-require "cuba"
-require "cuba/render"
-
-require "i18n_yaml_editor/app"
-
-module I18nYamlEditor
+module Iye
   class Web < Cuba
     plugin Cuba::Render
 
@@ -15,7 +8,7 @@ module I18nYamlEditor
     use Rack::ShowExceptions
 
     def app
-      I18nYamlEditor.app
+      Iye.app
     end
 
     define do

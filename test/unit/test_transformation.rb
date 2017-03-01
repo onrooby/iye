@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 require "test_helper"
-require "i18n_yaml_editor/transformation"
+require "iye/transformation"
 
 class TestTransformation < Minitest::Test
   def test_flatten_hash
